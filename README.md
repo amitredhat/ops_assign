@@ -10,4 +10,6 @@ It have two shell script that will perform below activity.
 - Make Sure you have installed awscli and configured it
 - This script is tested on fresh AWS Account in Asia Pacific (Mumbai) region
 
+# In order to launch EC2 and Configure required software, Run script as below.
+
 /bin/bash aws_ec2.sh
