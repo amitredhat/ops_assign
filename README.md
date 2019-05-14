@@ -23,3 +23,6 @@ It have two shell script that will perform below activity.
 # Import jenkins jobs using below command.
 - java -jar jenkins-cli.jar -s http://jenkins_host:8080/ create-job  ops_assign < ops_assign.xml
 
+Please note: Change your tomcat host and manager credentials accordingly.
+
+
