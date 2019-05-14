@@ -49,7 +49,7 @@ for ins_details in  $aws_dir/ec2.txt
     done;
 
 echo "installing packages on remote machine, Wait few seconds while system is coming up"
-sleep 15
+sleep 25
 ssh -i $aws_dir/$pemkey.pem -o "StrictHostKeyChecking=no" ubuntu@$pub_ip 'bash -s' <  $aws_dir/soft_install.sh
 
     echo "EC2 instance is launched & required software is installed public is $pub_ip"
