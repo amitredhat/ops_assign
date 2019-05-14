@@ -16,6 +16,7 @@ It have two shell script that will perform below activity.
 
 # In order to launch EC2 and Configure required software, Run script as below.
 
+- cd /opt
 - git clone https://github.com/amitredhat/ops_assign.git
 - cd ops_assign
 - /bin/bash aws_ec2.sh
