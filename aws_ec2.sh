@@ -5,7 +5,7 @@
 ##Make Sure you have installed awscli and configured it
 ##This script is tested on fresh AWS Account in Asia Pacific (Mumbai) region
 
-aws_dir="/opt"
+aws_dir="/opt/ops_assign"
 pemkey="ops_key"
 sg="ops_sg"
 img="ami-0a574895390037a62"
