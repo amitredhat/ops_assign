@@ -11,7 +11,7 @@ sg="ops_sg"
 img="ami-0a574895390037a62"
 itype="t2.micro"
 sbnt=$(aws ec2 describe-subnets | grep SubnetId | head -n 1 | cut -d":" -f 2 | tr -d '"' | tr -d ",")
-pass="Ops@123!#"
+pass="password"  ##Enter your mysql password here.
 
 ##keyPair
 echo "Creating Key Pair"
@@ -52,7 +52,7 @@ echo "installing packages on remote machine, Wait few seconds while system is co
 sleep 25
 ssh -i $aws_dir/$pemkey.pem -o "StrictHostKeyChecking=no" ubuntu@$pub_ip 'bash -s' <  $aws_dir/soft_install.sh
 
-    echo "EC2 instance is launched & required software is installed public is $pub_ip"
+    echo "EC2 instance is launched with required software, Public IP Address of instance is $pub_ip"
     echo "EC2 public ip is $pub_ip"
     echo "Mysql root password is $pass"
 
