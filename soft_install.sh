@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #installing require packages
-pass="Ops@123!#"
+pass="password" 	##please enter password for mysql
 
 sudo apt-get update
 sudo apt-get install default-jdk -y
